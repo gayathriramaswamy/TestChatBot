@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureLife Insurance - Protecting Your Future</title>
+    <meta name="description" content="Comprehensive insurance solutions for health, life, auto, and property. Get personalized quotes and expert advice from SecureLife Insurance.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <i class="fas fa-shield-alt nav__logo"></i>
+                <span class="nav__title">SecureLife</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Insurance</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__actions">
+                    <a href="tel:+1-800-555-0123" class="nav__phone">
+                        <i class="fas fa-phone"></i>
+                        <span>1-800-555-0123</span>
+                    </a>
+                    <a href="#contact" class="btn btn--primary btn--small">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <i class="fas fa-award"></i>
+                    <span>Trusted by 50,000+ families</span>
+                </div>
+                
+                <h1 class="hero__title">
+                    Protect What Matters Most with 
+                    <span class="hero__title--accent">Comprehensive Insurance</span>
+                </h1>
+                
+                <p class="hero__description">
+                    Get personalized insurance coverage that fits your life and budget. 
+                    From health and life insurance to auto and property protection, 
+                    we've got you covered with competitive rates and exceptional service.
+                </p>
+                
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary btn--large">
+                        <i class="fas fa-calculator"></i>
+                        Get Free Quote
+                    </a>
+                    <a href="#services" class="btn btn--outline btn--large">
+                        <i class="fas fa-play"></i>
+                        Learn More
+                    </a>
+                </div>
+                
+                <div class="hero__stats">
+                    <div class="stat">
+                        <div class="stat__number">50K+</div>
+                        <div class="stat__label">Happy Customers</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">$2.5B</div>
+                        <div class="stat__label">Claims Paid</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">25+</div>
+                        <div class="stat__label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">4.9★</div>
+                        <div class="stat__label">Customer Rating</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__visual">
+                <div class="hero__image">
+                    <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Happy family protected by insurance" class="hero__main-image">
+                    <div class="hero__card hero__card--1">
+                        <i class="fas fa-heart-pulse"></i>
+                        <span>Health Insurance</span>
+                        <div class="hero__card-badge">Active</div>
+                    </div>
+                    <div class="hero__card hero__card--2">
+                        <i class="fas fa-car"></i>
+                        <span>Auto Coverage</span>
+                        <div class="hero__card-badge">Protected</div>
+                    </div>
+                    <div class="hero__card hero__card--3">
+                        <i class="fas fa-home"></i>
+                        <span>Home Insurance</span>
+                        <div class="hero__card-badge">Secured</div>
+                    </div>
+                    <div class="hero__shield">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero__background">
+            <div class="hero__bg-shape hero__bg-shape--1"></div>
+            <div class="hero__bg-shape hero__bg-shape--2"></div>
+            <div class="hero__bg-shape hero__bg-shape--3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section__header">
+                <div class="section__badge">
+                    <i class="fas fa-umbrella"></i>
+                    <span>Our Services</span>
+                </div>
+                <h2 class="section__title">Comprehensive Insurance Solutions</h2>
+                <p class="section__description">
+                    Choose from our wide range of insurance products designed to protect 
+                    every aspect of your life and provide peace of mind for you and your family.
+                </p>
+            </div>
+            
+            <div class="services__grid">
+                <div class="service__card service__card--featured">
+                    <div class="service__image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Healthcare professionals" class="service__img">
+                    </div>
+                    <div class="service__icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="service__title">Health Insurance</h3>
+                    <p class="service__description">
+                        Comprehensive medical coverage for individuals and families with 
+                        access to top healthcare providers nationwide.
+                    </p>
+                    <ul class="service__features">
+                        <li><i class="fas fa-check"></i> Preventive care coverage</li>
+                        <li><i class="fas fa-check"></i> Prescription drug benefits</li>
+                        <li><i class="fas fa-check"></i> Mental health support</li>
+                        <li><i class="fas fa-check"></i> Emergency services</li>
+                    </ul>
+                    <div class="service__price">
+                        <span class="service__price-from">From</span>
+                        <span class="service__price-amount">$89</span>
+                        <span class="service__price-period">/month</span>
+                    </div>
+                    <a href="#contact" class="btn btn--primary btn--full">Get Quote</a>
+                </div>
+                
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Family life insurance protection" class="service__img">
+                    </div>
+                    <div class="service__icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="service__title">Life Insurance</h3>
+                    <p class="service__description">
+                        Secure your family's financial future with flexible life insurance 
+                        policies tailored to your needs and budget.
+                    </p>
+                    <ul class="service__features">
+                        <li><i class="fas fa-check"></i> Term & whole life options</li>
+                        <li><i class="fas fa-check"></i> Flexible premium payments</li>
+                        <li><i class="fas fa-check"></i> Cash value accumulation</li>
+                        <li><i class="fas fa-check"></i> Beneficiary protection</li>
+                    </ul>
+                    <div class="service__price">
+                        <span class="service__price-from">From</span>
+                        <span class="service__price-amount">$25</span>
+                        <span class="service__price-period">/month</span>
+                    </div>
+                    <a href="#contact" class="btn btn--outline btn--full">Learn More</a>
+                </div>
+                
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Car insurance and road safety" class="service__img">
+                    </div>
+                    <div class="service__icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="service__title">Auto Insurance</h3>
+                    <p class="service__description">
+                        Protect your vehicle and yourself on the road with comprehensive 
+                        auto insurance coverage at competitive rates.
+                    </p>
+                    <ul class="service__features">
+                        <li><i class="fas fa-check"></i> Liability coverage</li>
+                        <li><i class="fas fa-check"></i> Collision & comprehensive</li>
+                        <li><i class="fas fa-check"></i> Roadside assistance</li>
+                        <li><i class="fas fa-check"></i> Rental car coverage</li>
+                    </ul>
+                    <div class="service__price">
+                        <span class="service__price-from">From</span>
+                        <span class="service__price-amount">$65</span>
+                        <span class="service__price-period">/month</span>
+                    </div>
+                    <a href="#contact" class="btn btn--outline btn--full">Get Quote</a>
+                </div>
+                
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Beautiful home exterior for property insurance" class="service__img">
+                    </div>
+                    <div class="service__icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service__title">Property Insurance</h3>
+                    <p class="service__description">
+                        Safeguard your home and belongings with comprehensive property 
+                        insurance that covers damage, theft, and liability.
+                    </p>
+                    <ul class="service__features">
+                        <li><i class="fas fa-check"></i> Dwelling protection</li>
+                        <li><i class="fas fa-check"></i> Personal property coverage</li>
+                        <li><i class="fas fa-check"></i> Liability protection</li>
+                        <li><i class="fas fa-check"></i> Additional living expenses</li>
+                    </ul>
+                    <div class="service__price">
+                        <span class="service__price-from">From</span>
+                        <span class="service__price-amount">$45</span>
+                        <span class="service__price-period">/month</span>
+                    </div>
+                    <a href="#contact" class="btn btn--outline btn--full">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text">
+                    <div class="section__badge">
+                        <i class="fas fa-building"></i>
+                        <span>About SecureLife</span>
+                    </div>
+                    <h2 class="section__title">25+ Years of Protecting Families</h2>
+                    <p class="about__description">
+                        Since 1998, SecureLife Insurance has been a trusted partner for families 
+                        and businesses across the nation. We combine decades of experience with 
+                        innovative technology to deliver personalized insurance solutions that 
+                        truly protect what matters most to you.
+                    </p>
+                    
+                    <div class="about__highlights">
+                        <div class="highlight">
+                            <div class="highlight__icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="highlight__content">
+                                <h4>Industry Recognition</h4>
+                                <p>Rated A+ by AM Best for financial strength and stability</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="highlight__content">
+                                <h4>Expert Team</h4>
+                                <p>Licensed professionals with average 15+ years experience</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="highlight__content">
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock customer service and claims processing</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__actions">
+                        <a href="#contact" class="btn btn--primary">Get Started Today</a>
+                        <a href="tel:+1-800-555-0123" class="btn btn--text">
+                            <i class="fas fa-phone"></i>
+                            Call Us Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about__visual">
+                    <div class="about__image">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Professional insurance team meeting" class="about__main-image">
+                        <div class="about__stats-card">
+                            <div class="stats-card__header">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Company Performance</span>
+                            </div>
+                            <div class="stats-card__body">
+                                <div class="stats-item">
+                                    <span class="stats-label">Claims Processed</span>
+                                    <span class="stats-value">98.5%</span>
+                                </div>
+                                <div class="stats-item">
+                                    <span class="stats-label">Customer Satisfaction</span>
+                                    <span class="stats-value">4.9/5</span>
+                                </div>
+                                <div class="stats-item">
+                                    <span class="stats-label">Response Time</span>
+                                    <span class="stats-value">&lt; 24hrs</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about__team-card">
+                            <div class="team-card__avatars">
+                                <div class="avatar avatar--1"></div>
+                                <div class="avatar avatar--2"></div>
+                                <div class="avatar avatar--3"></div>
+                                <div class="avatar avatar--more">+12</div>
+                            </div>
+                            <div class="team-card__text">
+                                <span>Expert Insurance Team</span>
+                                <small>Ready to help you</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="section__badge">
+                        <i class="fas fa-envelope"></i>
+                        <span>Get In Touch</span>
+                    </div>
+                    <h2 class="section__title">Ready to Get Protected?</h2>
+                    <p class="contact__description">
+                        Get a personalized insurance quote in minutes. Our expert team is 
+                        standing by to help you find the perfect coverage for your needs.
+                    </p>
+                    
+                    <div class="contact__methods">
+                        <div class="contact__method">
+                            <div class="contact__method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact__method-content">
+                                <h4>Call Us</h4>
+                                <p>1-800-555-0123</p>
+                                <small>Mon-Fri 8AM-8PM, Sat 9AM-5PM</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__method">
+                            <div class="contact__method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact__method-content">
+                                <h4>Email Us</h4>
+                                <p>quotes@securelife.com</p>
+                                <small>Response within 2 hours</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__method">
+                            <div class="contact__method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact__method-content">
+                                <h4>Visit Us</h4>
+                                <p>123 Insurance Ave, Suite 100</p>
+                                <small>New York, NY 10001</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact__form-container">
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__header">
+                            <h3>Get Your Free Quote</h3>
+                            <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                        </div>
+                        
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form__input" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form__input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form__input" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="insuranceType" class="form__label">Insurance Type *</label>
+                                <select id="insuranceType" name="insuranceType" class="form__select" required>
+                                    <option value="">Select Insurance Type</option>
+                                    <option value="health">Health Insurance</option>
+                                    <option value="life">Life Insurance</option>
+                                    <option value="auto">Auto Insurance</option>
+                                    <option value="property">Property Insurance</option>
+                                    <option value="multiple">Multiple Types</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message" class="form__label">Additional Information</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="4" 
+                                placeholder="Tell us about your specific insurance needs..."></textarea>
+                        </div>
+                        
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="optIn" name="optIn" class="form__checkbox-input">
+                            <label for="optIn" class="form__checkbox-label">
+                                I agree to receive marketing communications and understand I can opt out at any time.
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full btn--large" id="submit-btn">
+                            <span class="btn-text">
+                                <i class="fas fa-paper-plane"></i>
+                                Get My Free Quote
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Processing...
+                            </span>
+                        </button>
+                        
+                        <div class="form__note">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Your information is secure and will never be shared with third parties.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SecureLife</span>
+                    </div>
+                    <p class="footer__description">
+                        Protecting families and businesses with comprehensive insurance 
+                        solutions for over 25 years. Your security is our priority.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Insurance Types</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Health Insurance</a></li>
+                            <li><a href="#" class="footer__link">Life Insurance</a></li>
+                            <li><a href="#" class="footer__link">Auto Insurance</a></li>
+                            <li><a href="#" class="footer__link">Property Insurance</a></li>
+                            <li><a href="#" class="footer__link">Business Insurance</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">About Us</a></li>
+                            <li><a href="#" class="footer__link">Our Team</a></li>
+                            <li><a href="#" class="footer__link">Careers</a></li>
+                            <li><a href="#" class="footer__link">News & Updates</a></li>
+                            <li><a href="#" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Support</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Help Center</a></li>
+                            <li><a href="#" class="footer__link">Claims</a></li>
+                            <li><a href="#" class="footer__link">Policy Management</a></li>
+                            <li><a href="#" class="footer__link">Payment Options</a></li>
+                            <li><a href="#" class="footer__link">FAQs</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Contact Info</h4>
+                        <div class="footer__contact">
+                            <div class="footer__contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>1-800-555-0123</span>
+                            </div>
+                            <div class="footer__contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@securelife.com</span>
+                            </div>
+                            <div class="footer__contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Insurance Ave, NY 10001</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; 2024 SecureLife Insurance. All rights reserved.</p>
+                </div>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Privacy Policy</a>
+                    <a href="#" class="footer__legal-link">Terms of Service</a>
+                    <a href="#" class="footer__legal-link">Cookie Policy</a>
+                </div>
+                <div class="footer__certifications">
+                    <div class="certification">
+                        <i class="fas fa-certificate"></i>
+                        <span>A+ Rated</span>
+                    </div>
+                    <div class="certification">
+                        <i class="fas fa-shield-check"></i>
+                        <span>Licensed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__icon" id="modal-icon"></div>
+                <h3 class="modal__title" id="modal-title"></h3>
+                <button class="modal__close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__body">
+                <p class="modal__message" id="modal-message"></p>
+            </div>
+            <div class="modal__footer">
+                <button class="btn btn--primary" id="modal-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

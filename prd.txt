@@ -1,0 +1,172 @@
+Insurance Website Product Requirements
+Document (PRD)
+1. Problem Statement
+The client currently lacks a digital presence, making it difficult for potential customers to:
+●
+Learn about available insurance services
+●
+Submit inquiries or get in touch easily
+This absence limits customer reach, credibility, and lead generation.
+The proposed single-page website will address these gaps by providing a professional and
+accessible online platform.
+2. Overview / Objective
+The goal of this project is to design and develop a single-page insurance website that enables
+users to:
+●
+Learn about the insurance services offered by the client
+●
+Submit their contact information for inquiries or quotes
+●
+Receive follow-up communication from the client
+This initial phase focuses on delivering a simple, fast, and user-friendly experience that:
+●
+Builds trust and online visibility
+●
+Collects qualified leads efficiently
+●
+Serves as the foundation for future enhancements
+Future versions may introduce:
+●
+Policy comparison and quote generation
+●
+Online payments and user account management
+3. Goals & Success Metrics
+Goals
+●
+●
+●
+●
+Create a simple, informative, and responsive single-page website.
+Allow users to easily submit contact or inquiry information.
+Enable the client to receive and manage leads efficiently.
+Build trust and brand visibility online.
+Success Metrics
+●
+●
+●
+Website launches on time and operates smoothly.
+Users complete and submit inquiry forms.
+The client consistently receives inquiries via email.
+4. Target Audience
+The website is designed for:
+●
+Individuals seeking health, life, auto, or general insurance.
+●
+Users who prefer to request quotes or information online.
+●
+Existing customers wanting to renew or contact support.
+5. Use Cases
+Use Case Description
+Use Case 1 Use Case 2 Use Case 3 A user visits the website to learn about the
+insurance services offered.
+A user fills out the contact form to request
+more information or a quote.
+The client receives the submitted details via
+email and follows up with the user.
+6. High-Level Architecture
+Components
+Frontend (Single Page)
+●
+Built using HTML/CSS/JS or a lightweight framework (React/Vue).
+●
+Displays company overview, insurance offerings, and contact form.
+Backend (Form Handler / Email Gateway)
+●
+Lightweight backend logic to process and validate form submissions.
+●
+We will implement using Node.js/Express.
+Deployment
+●
+Client Inbox
+●
+Designated email account where form submissions are received.
+●
+Enables direct client-to-customer replies.
+Security & Spam Protection
+●
+HTTPS for all connections.
+Can be implemented as a serverless function (Vercel) or EmailJS integration.
+●
+●
+●
+Input validation (frontend + backend).
+CAPTCHA integration (reCAPTCHA or hCaptcha).
+Anti-spam filters on the email provider.
+Minimal API Endpoints (Example)
+Endpoint Description
+Receives {name, email, phone, insuranceType, message,
+optIn} → validates → sends email → returns success/failure.
+POST
+/api/send-inqu
+iry
+GET /health
+(optional)
+Returns system health status for uptime checks.
+7. Features & Functional Requirements
+Single-Page Website
+●
+Modern, responsive layout.
+●
+Displays company information and services clearly.
+●
+Accessible from desktop and mobile devices.
+Contact / Inquiry Form
+●
+●
+●
+Fields: Name, Email, Phone, Type of Insurance, Message.
+Includes Submit button with success/failure response.
+Frontend and backend validation for accurate input.
+Email Submission System
+●
+Form data sent via EmailJS or similar service.
+●
+●
+Delivered directly to client’s inbox.
+No database or data storage required in Phase 1.
+Confirmation Message
+●
+On success:
+●
+“Thank you for contacting us. We will get back to you soon.
+On failure:
+Displays an error alert for retry.
+8. Dependencies & Constraints
+Dependencies
+●
+Hosting platform (Vercel)
+●
+Email service (EmailJS)
+●
+Active client email account
+”
+●
+●
+Domain and SSL certificate setup (optional)
+CAPTCHA integration for spam protection (optional)
+Constraints
+●
+●
+●
+●
+●
+No persistent data storage or database in this phase.
+Manual client follow-up for all inquiries.
+Reliant on third-party email service uptime and configuration.
+Limited scalability — designed for a small, single-person business.
+Must comply with basic privacy and data protection practices.
+9. User Experience / UI Notes
+Overall Design
+●
+Clean, modern, and trustworthy visual design.
+●
+●
+●
+Professional color scheme reflecting insurance and reliability.
+Simple navigation and mobile-friendly layout.
+Clear call-to-action buttons for form submission and contact.
+●
+Prominent display of services and brand identity.
+Deliverable:
+A fully functional, single-page insurance website with integrated email submission, hosted
+securely, and optimized for speed and usability.
