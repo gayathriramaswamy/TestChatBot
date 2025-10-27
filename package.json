@@ -1,5 +1,5 @@
 {
-  "name": "insurance-website",
+  "name": "testchatbot",
   "version": "1.0.0",
   "description": "Single-page insurance website with contact form and email integration",
   "main": "server.js",
