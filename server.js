@@ -34,6 +34,10 @@ function initializeChatbot() {
         // Handle both formats: array of knowledge segments or documents array
         const segments = Array.isArray(knowledgeData) ? knowledgeData : knowledgeData.documents;
         
+        if (!segments || segments.length === 0) {
+            throw new Error('No knowledge segments found');
+        }
+        
         segments.forEach(segment => {
             if (segment.content) {
                 // New format from text extraction
@@ -49,8 +53,11 @@ function initializeChatbot() {
         });
         
         console.log(`Chatbot initialized with ${segments.length} knowledge segments`);
+        return true;
     } catch (error) {
         console.error('Error initializing chatbot:', error);
+        chatbotVectorStore = null;
+        return false;
     }
 }
 require('dotenv').config();
@@ -74,8 +81,12 @@ app.use(helmet({
 
 app.use(cors({
     origin: process.env.NODE_ENV === 'production' 
-        ? ['https://your-domain.com', 'https://www.your-domain.com'] 
-        : ['http://localhost:3000', 'http://127.0.0.1:3000'],
+        ? [
+            'https://testchatbot7-j371vlqcf-gayathri-ramaswamys-projects.vercel.app',
+            'https://testchatbot7.vercel.app',
+            /^https:\/\/.*\.vercel\.app$/
+          ] 
+        : ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:8080'],
     credentials: true
 }));
 
@@ -410,11 +421,22 @@ app.post('/api/chatbot', (req, res) => {
     try {
         const { message } = req.body;
         
-        if (!message || !chatbotVectorStore) {
+        if (!message) {
             return res.json({
                 success: false,
-                message: 'Invalid request or chatbot not initialized'
+                message: 'Please provide a message'
             });
+        }
+        
+        if (!chatbotVectorStore) {
+            console.error('Chatbot not initialized - attempting to reinitialize');
+            const initialized = initializeChatbot();
+            if (!initialized) {
+                return res.json({
+                    success: false,
+                    message: 'Sorry, I\'m having trouble connecting. Please try again later.'
+                });
+            }
         }
 
         // Search for relevant content
