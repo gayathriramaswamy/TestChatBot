@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "builds": [
+  "functions": {
+    "server.js": {
+      "runtime": "@vercel/node@3"
+    }
+  },
+  "rewrites": [
     {
-      "src": "server.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "*.{html,css,js,png,jpg,jpeg,gif,svg,ico}",
-      "use": "@vercel/static"
+      "source": "/api/(.*)",
+      "destination": "/server.js"
     }
   ],
   "env": {
