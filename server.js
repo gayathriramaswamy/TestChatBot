@@ -63,7 +63,7 @@ function initializeChatbot() {
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 9090;
 
 // Security middleware
 app.use(helmet({
@@ -86,7 +86,7 @@ app.use(cors({
             'https://testchatbot7.vercel.app',
             /^https:\/\/.*\.vercel\.app$/
           ] 
-        : ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:8080'],
+        : ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:9090'],
     credentials: true
 }));
 
